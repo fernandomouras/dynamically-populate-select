@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamically Populate Select</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="f-group">
+        <label for="">Country</label>
+        <select name="select1" id="select1" onchange="populate(this.id, 'select2')">
+            <option value=""> -- Choose Country -- </option>
+            <option value="brazil">Brazil</option>
+            <option value="england">England</option>
+        </select>
+    </div>
+</div>
+
+<div class="f-group">
+    <label for="">Team</label>
+    <select name="select2" id="select2"></select>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
